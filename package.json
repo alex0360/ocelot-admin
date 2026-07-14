@@ -1,0 +1,31 @@
+{
+  "name": "gateway-manager-cws",
+  "version": "1.0.0",
+  "description": "Panel de administración visual para Ocelot API Gateway — CWS",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "node --watch server/index.js",
+    "dev:client": "cd client && npx vite --port 5173",
+    "build": "cd client && npx vite build",
+    "start": "NODE_ENV=production node server/index.js",
+    "stop": "taskkill /F /IM node.exe",
+    "lint": "cd client && npx eslint src/"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.4.2",
+    "express": "^4.21.0",
+    "express-jwt": "^8.4.1",
+    "express-rate-limit": "^7.4.0",
+    "fs-extra": "^11.2.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "jwks-rsa": "^3.1.0",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
