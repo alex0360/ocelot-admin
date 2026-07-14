@@ -1,7 +1,7 @@
 {
-  "name": "gateway-manager-cws",
+  "name": "gateway-manager",
   "version": "1.0.0",
-  "description": "Panel de administración visual para Ocelot API Gateway — CWS",
+  "description": "Panel de administracion visual para Ocelot API Gateway",
   "private": true,
   "type": "module",
   "scripts": {
@@ -9,7 +9,7 @@
     "dev:server": "node --watch server/index.js",
     "dev:client": "cd client && npx vite --port 5173",
     "build": "cd client && npx vite build",
-    "start": "NODE_ENV=production node server/index.js",
+    "start": "cross-env NODE_ENV=production node server/index.js",
     "stop": "taskkill /F /IM node.exe",
     "lint": "cd client && npx eslint src/"
   },
@@ -26,6 +26,7 @@
     "uuid": "^10.0.0"
   },
   "devDependencies": {
-    "concurrently": "^9.0.1"
+    "concurrently": "^9.0.1",
+    "cross-env": "^10.1.0"
   }
 }

@@ -68,7 +68,7 @@
 
           <label class="field field-wide">
             <span>Host destino</span>
-            <input v-model.trim="form.downstreamHost" type="text" placeholder="serapp01.cardnet.com.do" required>
+            <input v-model.trim="form.downstreamHost" type="text" placeholder="api.example.internal" required>
           </label>
 
           <label class="field field-wide">
@@ -520,7 +520,7 @@ function uniqueMessages(messages) {
   border-bottom: 1px solid rgba(226, 224, 219, .18);
   background:
     radial-gradient(circle at 86% 0%, rgba(0, 182, 200, .22), transparent 28%),
-    linear-gradient(135deg, var(--cardnet-navy), #211F4B);
+    linear-gradient(135deg, var(--brand-navy), #211F4B);
   color: #fff;
 }
 .title-block {
@@ -528,7 +528,7 @@ function uniqueMessages(messages) {
   min-width: 0;
 }
 .eyebrow {
-  color: var(--cardnet-teal);
+  color: var(--brand-teal);
   font-size: 11px;
   font-weight: 800;
   letter-spacing: 1px;
@@ -562,7 +562,7 @@ function uniqueMessages(messages) {
   font-weight: 800;
 }
 .route-editor-modal .close-btn:hover {
-  border-color: var(--cardnet-teal);
+  border-color: var(--brand-teal);
   color: #fff;
   background: rgba(0, 182, 200, .14);
 }
@@ -632,7 +632,7 @@ function uniqueMessages(messages) {
 .route-editor-modal .field input:focus,
 .route-editor-modal .field select:focus,
 .route-editor-modal .field textarea:focus {
-  border-color: var(--cardnet-teal);
+  border-color: var(--brand-teal);
   box-shadow: 0 0 0 3px rgba(0, 182, 200, .18);
 }
 .route-editor-modal .method-grid {
@@ -656,7 +656,7 @@ function uniqueMessages(messages) {
   transition: background .15s, border-color .15s, color .15s, transform .15s;
 }
 .route-editor-modal .method-option:hover {
-  border-color: var(--cardnet-teal);
+  border-color: var(--brand-teal);
   color: var(--text);
 }
 .route-editor-modal .method-option.active {
@@ -664,12 +664,12 @@ function uniqueMessages(messages) {
   color: #fff;
   box-shadow: 0 8px 18px rgba(42, 40, 95, .18);
 }
-.route-editor-modal .method-option.GET.active { background: var(--cardnet-teal); }
-.route-editor-modal .method-option.POST.active { background: var(--cardnet-purple); }
+.route-editor-modal .method-option.GET.active { background: var(--brand-teal); }
+.route-editor-modal .method-option.POST.active { background: var(--brand-purple); }
 .route-editor-modal .method-option.PUT.active { background: #8A7100; }
 .route-editor-modal .method-option.PATCH.active { background: #5A3FAE; }
-.route-editor-modal .method-option.DELETE.active { background: var(--cardnet-coral); }
-.route-editor-modal .method-option.OPTIONS.active { background: var(--cardnet-navy); }
+.route-editor-modal .method-option.DELETE.active { background: var(--brand-coral); }
+.route-editor-modal .method-option.OPTIONS.active { background: var(--brand-navy); }
 .cache-section {
   background: var(--surface-alt);
 }
@@ -690,8 +690,8 @@ function uniqueMessages(messages) {
   font-weight: 900;
 }
 .route-editor-modal .switch.on {
-  border-color: var(--cardnet-teal);
-  background: var(--cardnet-teal);
+  border-color: var(--brand-teal);
+  background: var(--brand-teal);
   color: #fff;
 }
 .cache-controls {
@@ -732,7 +732,7 @@ function uniqueMessages(messages) {
   cursor: not-allowed;
 }
 .route-editor-modal .ttl-presets button:not(:disabled):hover {
-  border-color: var(--cardnet-teal);
+  border-color: var(--brand-teal);
   color: var(--text);
 }
 .hash-option {
@@ -752,7 +752,7 @@ function uniqueMessages(messages) {
 .hash-option input {
   width: 15px;
   height: 15px;
-  accent-color: var(--cardnet-teal);
+  accent-color: var(--brand-teal);
 }
 .hash-option.disabled {
   cursor: not-allowed;
@@ -788,7 +788,7 @@ function uniqueMessages(messages) {
   color: var(--text);
 }
 .error-box strong {
-  color: var(--cardnet-coral);
+  color: var(--brand-coral);
 }
 .warning-box {
   border: 1px solid rgba(255, 223, 0, .46);
@@ -817,11 +817,11 @@ function uniqueMessages(messages) {
   border: 1px solid transparent;
 }
 .route-editor-modal .btn-primary {
-  background: var(--cardnet-teal);
+  background: var(--brand-teal);
   color: #fff;
 }
 .route-editor-modal .btn-primary:hover {
-  background: var(--cardnet-teal-dark);
+  background: var(--brand-teal-dark);
 }
 .route-editor-modal .btn-outline {
   background: var(--surface);
@@ -829,7 +829,7 @@ function uniqueMessages(messages) {
   border-color: var(--border);
 }
 .route-editor-modal .btn-outline:hover {
-  border-color: var(--cardnet-teal);
+  border-color: var(--brand-teal);
   color: var(--text);
 }
 @media (max-width: 640px) {

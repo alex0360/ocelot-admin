@@ -80,7 +80,7 @@ defineEmits(['close', 'confirm']);
   min-width: 0;
 }
 .delete-header .eyebrow {
-  color: var(--cardnet-coral);
+  color: var(--brand-coral);
   font-size: 11px;
   font-weight: 800;
   letter-spacing: .8px;
@@ -148,7 +148,7 @@ defineEmits(['close', 'confirm']);
   border-color: var(--border);
 }
 .delete-modal .btn-danger {
-  background: var(--cardnet-coral);
+  background: var(--brand-coral);
   color: #fff;
 }
 .delete-modal .btn-danger:hover {

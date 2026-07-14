@@ -120,7 +120,7 @@ async function submit() {
   align-items: flex-start;
   gap: 16px;
   padding: 22px 24px 18px;
-  background: linear-gradient(135deg, var(--cardnet-navy), #211F4B);
+  background: linear-gradient(135deg, var(--brand-navy), #211F4B);
 }
 .modal-header div { flex: 1; min-width: 0; }
 .modal-header h2 {
@@ -145,7 +145,7 @@ async function submit() {
   font-weight: 800;
 }
 .icon-btn:hover {
-  border-color: var(--cardnet-teal);
+  border-color: var(--brand-teal);
   color: #fff;
 }
 .field {
@@ -175,12 +175,12 @@ async function submit() {
 }
 .field input:focus,
 .field select:focus {
-  border-color: var(--cardnet-teal);
+  border-color: var(--brand-teal);
   box-shadow: 0 0 0 3px rgba(0, 182, 200, .18);
 }
 .error {
   margin: 4px 24px 14px;
-  color: var(--cardnet-coral);
+  color: var(--brand-coral);
   font-size: 12px;
   font-weight: 800;
 }
@@ -207,17 +207,17 @@ async function submit() {
   cursor: not-allowed;
 }
 .btn-primary {
-  background: var(--cardnet-teal);
+  background: var(--brand-teal);
   color: #fff;
 }
-.btn-primary:hover { background: var(--cardnet-teal-dark); }
+.btn-primary:hover { background: var(--brand-teal-dark); }
 .btn-outline {
   background: transparent;
   color: var(--muted);
   border-color: var(--border);
 }
 .btn-outline:hover {
-  border-color: var(--cardnet-teal);
+  border-color: var(--brand-teal);
   color: var(--text);
 }
 </style>

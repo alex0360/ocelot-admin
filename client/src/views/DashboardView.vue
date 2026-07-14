@@ -11,9 +11,9 @@
     <template v-else>
       <header class="topbar">
         <div class="topbar-title">
-          <span class="eyebrow">API Gateway CardNET</span>
+          <span class="eyebrow">API Gateway</span>
           <h2>{{ envStore.activeFile.displayName }}</h2>
-          <p>Puerta de Enlace para los microservicios de CardNET</p>
+          <p>Puerta de Enlace para los microservicios</p>
         </div>
         <span class="badge env">{{ envStore.activeEnvironment?.name }}</span>
         <div class="spacer"></div>
@@ -301,7 +301,7 @@ function hasAuth(route) {
 function authLabel(route) {
   const providers = route.authenticationOptions?.AuthenticationProviderKeys || [];
   const scopes = route.authenticationOptions?.AllowedScopes || [];
-  return scopes.length ? `${providers.join(', ')} · ${scopes.length} scope(s)` : providers.join(', ');
+  return scopes.length ? `${providers.join(', ')} Â· ${scopes.length} scope(s)` : providers.join(', ');
 }
 
 function openPublishModal() {
@@ -368,13 +368,13 @@ async function publishChanges(comment) {
   display: grid;
   place-items: center;
   margin: 0 auto 16px;
-  background: linear-gradient(135deg, var(--cardnet-teal), var(--cardnet-purple));
+  background: linear-gradient(135deg, var(--brand-teal), var(--brand-purple));
   color: #fff;
   font-weight: 800;
 }
 .empty-state h3 { color: var(--text); margin-bottom: 6px; font-weight: 800; }
 .topbar {
-  background: linear-gradient(135deg, var(--cardnet-navy), #211F4B);
+  background: linear-gradient(135deg, var(--brand-navy), #211F4B);
   border-bottom: 1px solid rgba(226, 224, 219, .18);
   padding: 20px 28px;
   display: flex;
@@ -389,7 +389,7 @@ async function publishChanges(comment) {
   gap: 4px;
 }
 .eyebrow {
-  color: var(--cardnet-teal);
+  color: var(--brand-teal);
   font-size: 10px;
   font-weight: 800;
   text-transform: uppercase;
@@ -415,8 +415,8 @@ async function publishChanges(comment) {
   border-radius: 20px;
 }
 .badge.env {
-  background: var(--cardnet-yellow);
-  color: var(--cardnet-navy);
+  background: var(--brand-yellow);
+  color: var(--brand-navy);
   border: 1px solid rgba(255, 255, 255, .22);
 }
 .spacer { flex: 1; }
@@ -439,18 +439,18 @@ async function publishChanges(comment) {
   border: 1px solid transparent;
 }
 .btn-sm { font-size: 12px; padding: 7px 14px; }
-.btn-primary { background: var(--cardnet-teal); color: #fff; }
-.btn-primary:hover { background: var(--cardnet-teal-dark); }
+.btn-primary { background: var(--brand-teal); color: #fff; }
+.btn-primary:hover { background: var(--brand-teal-dark); }
 .btn-primary:disabled { opacity: .45; cursor: not-allowed; }
 .btn-outline { background: transparent; border-color: var(--border); color: var(--muted); }
-.btn-outline:hover { border-color: var(--cardnet-teal); color: var(--text); }
+.btn-outline:hover { border-color: var(--brand-teal); color: var(--text); }
 .topbar .btn-outline {
   border-color: rgba(226, 224, 219, .45);
   color: #fff;
   background: rgba(255, 255, 255, .06);
 }
 .topbar .btn-outline:hover {
-  border-color: var(--cardnet-teal);
+  border-color: var(--brand-teal);
   color: #fff;
 }
 .toolbar {
@@ -476,7 +476,7 @@ async function publishChanges(comment) {
   display: grid;
   place-items: center;
   background: rgba(0, 182, 200, .12);
-  color: var(--cardnet-teal);
+  color: var(--brand-teal);
   font-weight: 800;
 }
 .search-box input {
@@ -492,7 +492,7 @@ async function publishChanges(comment) {
   box-shadow: var(--shadow-soft);
 }
 .search-box input:focus {
-  border-color: var(--cardnet-teal);
+  border-color: var(--brand-teal);
   box-shadow: 0 0 0 3px rgba(0, 182, 200, .18);
 }
 .sort-control {
@@ -525,7 +525,7 @@ async function publishChanges(comment) {
   box-shadow: var(--shadow-soft);
 }
 .sort-control select:focus {
-  border-color: var(--cardnet-teal);
+  border-color: var(--brand-teal);
   box-shadow: 0 0 0 3px rgba(0, 182, 200, .18);
 }
 .route-list { padding: 18px 28px 40px; }
@@ -548,11 +548,11 @@ async function publishChanges(comment) {
   position: absolute;
   inset: 0 auto 0 0;
   width: 4px;
-  background: var(--cardnet-teal);
+  background: var(--brand-teal);
   opacity: .9;
 }
 .route-card:hover {
-  border-color: var(--cardnet-teal);
+  border-color: var(--brand-teal);
   transform: translateY(-1px);
   box-shadow: 0 18px 40px rgba(42, 40, 95, .12);
 }
@@ -621,32 +621,32 @@ async function publishChanges(comment) {
   box-shadow: 0 1px 0 rgba(255, 255, 255, .12) inset;
 }
 .method-chip.GET {
-  background: var(--cardnet-teal);
+  background: var(--brand-teal);
   border-color: rgba(0, 182, 200, .75);
   color: #051A2F;
 }
 .method-chip.POST {
-  background: var(--cardnet-purple);
+  background: var(--brand-purple);
   border-color: rgba(131, 66, 215, .78);
   color: #fff;
 }
 .method-chip.PUT {
-  background: var(--cardnet-yellow);
+  background: var(--brand-yellow);
   border-color: rgba(255, 223, 0, .78);
-  color: var(--cardnet-navy);
+  color: var(--brand-navy);
 }
 .method-chip.PATCH {
   background: #E2E0DB;
   border-color: rgba(226, 224, 219, .78);
-  color: var(--cardnet-navy);
+  color: var(--brand-navy);
 }
 .method-chip.DELETE {
-  background: var(--cardnet-coral);
+  background: var(--brand-coral);
   border-color: rgba(240, 86, 116, .78);
   color: #fff;
 }
 .method-chip.OPTIONS {
-  background: var(--cardnet-navy);
+  background: var(--brand-navy);
   border-color: rgba(0, 182, 200, .55);
   color: #fff;
 }
@@ -690,7 +690,7 @@ async function publishChanges(comment) {
   white-space: nowrap;
   display: flex;
 }
-.upstream { background: var(--cardnet-navy); color: #fff; }
+.upstream { background: var(--brand-navy); color: #fff; }
 .downstream {
   background: rgba(0, 182, 200, .14);
   color: var(--text);
@@ -731,7 +731,7 @@ async function publishChanges(comment) {
   color: var(--text);
 }
 .meta-pill strong.cache-on {
-  color: var(--cardnet-teal);
+  color: var(--brand-teal);
 }
 .route-actions {
   display: flex;
@@ -753,7 +753,7 @@ async function publishChanges(comment) {
   flex-shrink: 0;
   transition: background .2s;
 }
-.toggle-btn.on { background: var(--cardnet-teal); }
+.toggle-btn.on { background: var(--brand-teal); }
 .toggle-btn::after {
   content: "";
   position: absolute;
@@ -793,15 +793,15 @@ async function publishChanges(comment) {
 .action-btn:hover,
 .action-btn:focus-visible {
   background: rgba(0, 182, 200, .12);
-  border-color: var(--cardnet-teal);
-  color: var(--cardnet-teal);
+  border-color: var(--brand-teal);
+  color: var(--brand-teal);
   outline: none;
   transform: translateY(-1px);
 }
 .action-btn.danger:hover,
 .action-btn.danger:focus-visible {
-  border-color: var(--cardnet-coral);
-  color: var(--cardnet-coral);
+  border-color: var(--brand-coral);
+  color: var(--brand-coral);
   background: rgba(240, 86, 116, .12);
 }
 .sr-only {

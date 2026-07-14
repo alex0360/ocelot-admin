@@ -665,11 +665,11 @@ function defaultHealth(path = '/health') {
   justify-content: space-between;
   gap: 16px;
   padding: 24px 28px;
-  background: linear-gradient(135deg, var(--cardnet-navy), #211F4B);
+  background: linear-gradient(135deg, var(--brand-navy), #211F4B);
   color: #fff;
 }
 .eyebrow {
-  color: var(--cardnet-teal);
+  color: var(--brand-teal);
   font-size: 10px;
   font-weight: 900;
   letter-spacing: 1.2px;
@@ -711,7 +711,7 @@ function defaultHealth(path = '/health') {
   align-items: center;
   background: rgba(0, 182, 200, .12);
   border-radius: 6px;
-  color: var(--cardnet-teal);
+  color: var(--brand-teal);
   display: grid;
   font-size: 16px;
   font-weight: 900;
@@ -736,7 +736,7 @@ function defaultHealth(path = '/health') {
   width: 100%;
 }
 .search-box input:focus {
-  border-color: var(--cardnet-teal);
+  border-color: var(--brand-teal);
   box-shadow: 0 0 0 3px rgba(0, 182, 200, .18);
 }
 .sort-control {
@@ -769,7 +769,7 @@ function defaultHealth(path = '/health') {
   box-shadow: var(--shadow-soft);
 }
 .sort-control select:focus {
-  border-color: var(--cardnet-teal);
+  border-color: var(--brand-teal);
   box-shadow: 0 0 0 3px rgba(0, 182, 200, .18);
 }
 .group-grid {
@@ -798,11 +798,11 @@ function defaultHealth(path = '/health') {
   position: absolute;
   inset: 0 auto 0 0;
   width: 4px;
-  background: var(--cardnet-teal);
+  background: var(--brand-teal);
   opacity: .9;
 }
 .service-group:hover {
-  border-color: var(--cardnet-teal);
+  border-color: var(--brand-teal);
   box-shadow: 0 18px 40px rgba(42, 40, 95, .12);
   transform: translateY(-1px);
 }
@@ -883,19 +883,19 @@ function defaultHealth(path = '/health') {
   text-transform: uppercase;
 }
 .health-tag.host-tag {
-  background: var(--cardnet-teal);
+  background: var(--brand-teal);
   border-color: rgba(0, 182, 200, .75);
   color: #051A2F;
   font-family: ui-monospace, monospace;
   text-transform: none;
 }
 .health-tag.method-tag.GET {
-  background: var(--cardnet-teal);
+  background: var(--brand-teal);
   border-color: rgba(0, 182, 200, .75);
   color: #051A2F;
 }
 .health-tag.method-tag.HEAD {
-  background: var(--cardnet-navy);
+  background: var(--brand-navy);
   border-color: rgba(0, 182, 200, .55);
   color: #fff;
 }
@@ -908,9 +908,9 @@ function defaultHealth(path = '/health') {
   min-height: 28px;
   padding: 0 10px;
 }
-.status-pill.healthy { border-color: rgba(0, 182, 200, .38); color: var(--cardnet-teal); }
+.status-pill.healthy { border-color: rgba(0, 182, 200, .38); color: var(--brand-teal); }
 .status-pill.unhealthy,
-.status-pill.unreachable { border-color: rgba(240, 86, 116, .38); color: var(--cardnet-coral); }
+.status-pill.unreachable { border-color: rgba(240, 86, 116, .38); color: var(--brand-coral); }
 .status-pill.disabled { color: var(--muted); }
 .health-flow {
   display: grid;
@@ -946,7 +946,7 @@ function defaultHealth(path = '/health') {
   white-space: nowrap;
 }
 .upstream {
-  background: var(--cardnet-navy);
+  background: var(--brand-navy);
   color: #fff;
 }
 .downstream {
@@ -1006,7 +1006,7 @@ function defaultHealth(path = '/health') {
   width: 46px;
 }
 .toggle-btn.on {
-  background: var(--cardnet-teal);
+  background: var(--brand-teal);
 }
 .toggle-btn::after {
   background: #fff;
@@ -1051,16 +1051,16 @@ function defaultHealth(path = '/health') {
 .action-btn:hover,
 .action-btn:focus-visible {
   background: rgba(0, 182, 200, .12);
-  border-color: var(--cardnet-teal);
-  color: var(--cardnet-teal);
+  border-color: var(--brand-teal);
+  color: var(--brand-teal);
   outline: none;
   transform: translateY(-1px);
 }
 .action-btn.danger:hover,
 .action-btn.danger:focus-visible {
   background: rgba(240, 86, 116, .12);
-  border-color: var(--cardnet-coral);
-  color: var(--cardnet-coral);
+  border-color: var(--brand-coral);
+  color: var(--brand-coral);
 }
 .btn,
 .link-btn,
@@ -1078,7 +1078,7 @@ function defaultHealth(path = '/health') {
   padding: 8px 16px;
 }
 .btn-primary {
-  background: var(--cardnet-teal);
+  background: var(--brand-teal);
   color: #fff;
 }
 .btn-outline {
@@ -1092,7 +1092,7 @@ function defaultHealth(path = '/health') {
   color: #fff;
 }
 .settings-hero .btn-outline:hover {
-  border-color: var(--cardnet-teal);
+  border-color: var(--brand-teal);
 }
 .btn:disabled {
   cursor: not-allowed;
@@ -1118,7 +1118,7 @@ function defaultHealth(path = '/health') {
 .error-message {
   border: 1px solid rgba(240, 86, 116, .38);
   background: rgba(240, 86, 116, .10);
-  color: var(--cardnet-coral);
+  color: var(--brand-coral);
 }
 .warning-list {
   display: grid;
@@ -1128,7 +1128,7 @@ function defaultHealth(path = '/health') {
 .warning-message {
   border: 1px solid rgba(255, 223, 0, .38);
   background: rgba(255, 223, 0, .10);
-  color: var(--cardnet-yellow);
+  color: var(--brand-yellow);
 }
 .modal-backdrop {
   position: fixed;
@@ -1148,7 +1148,7 @@ function defaultHealth(path = '/health') {
   justify-content: space-between;
   gap: 14px;
   padding: 20px 22px;
-  background: linear-gradient(135deg, var(--cardnet-navy), #211F4B);
+  background: linear-gradient(135deg, var(--brand-navy), #211F4B);
 }
 .modal-header h3 {
   color: #fff;

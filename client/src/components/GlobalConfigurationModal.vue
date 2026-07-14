@@ -113,10 +113,10 @@ function parseConfig() {
   padding: 22px 24px 18px;
   background:
     radial-gradient(circle at 86% 0%, rgba(0, 182, 200, .22), transparent 28%),
-    linear-gradient(135deg, var(--cardnet-navy), #211F4B);
+    linear-gradient(135deg, var(--brand-navy), #211F4B);
 }
 .eyebrow {
-  color: var(--cardnet-teal);
+  color: var(--brand-teal);
   font-size: 11px;
   font-weight: 900;
   letter-spacing: 1px;
@@ -180,14 +180,14 @@ function parseConfig() {
 }
 .field input:focus,
 .field textarea:focus {
-  border-color: var(--cardnet-teal);
+  border-color: var(--brand-teal);
   box-shadow: 0 0 0 3px rgba(0, 182, 200, .18);
 }
 .error {
   border: 1px solid rgba(240, 86, 116, .38);
   border-radius: 8px;
   background: rgba(240, 86, 116, .10);
-  color: var(--cardnet-coral);
+  color: var(--brand-coral);
   font-size: 12px;
   font-weight: 900;
   padding: 12px 14px;
@@ -212,7 +212,7 @@ function parseConfig() {
   padding: 8px 18px;
 }
 .btn-primary {
-  background: var(--cardnet-teal);
+  background: var(--brand-teal);
   color: #fff;
 }
 .btn-outline {

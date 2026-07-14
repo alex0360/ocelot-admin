@@ -4,7 +4,7 @@
       <div class="brand-top">
         <div class="brand-id">
           <div class="brand-mark" aria-hidden="true">GM</div>
-          <span class="tag">CardNET</span>
+          <span class="tag">Ocelot</span>
         </div>
         <button class="theme-btn" :title="themeTitle" @click="$emit('toggle-theme')">
           <svg v-if="currentTheme === 'dark'" class="theme-icon" viewBox="0 0 24 24" aria-hidden="true">
@@ -323,7 +323,7 @@ defineEmits(['open-file-form', 'toggle-theme']);
   width: 38px;
   height: 38px;
   border-radius: 10px;
-  background: linear-gradient(135deg, var(--cardnet-teal), var(--cardnet-purple));
+  background: linear-gradient(135deg, var(--brand-teal), var(--brand-purple));
   color: #fff;
   display: grid;
   place-items: center;
@@ -341,8 +341,8 @@ defineEmits(['open-file-form', 'toggle-theme']);
   line-height: 1.05;
 }
 .tag {
-  background: var(--cardnet-yellow);
-  color: var(--cardnet-navy);
+  background: var(--brand-yellow);
+  color: var(--brand-navy);
   font-size: 10px;
   padding: 2px 7px;
   border-radius: 4px;
@@ -372,7 +372,7 @@ defineEmits(['open-file-form', 'toggle-theme']);
   gap: 5px;
 }
 .theme-btn:hover {
-  border-color: var(--cardnet-teal);
+  border-color: var(--brand-teal);
   color: var(--sidebar-text);
 }
 .theme-icon {
@@ -438,17 +438,17 @@ defineEmits(['open-file-form', 'toggle-theme']);
   text-decoration: none;
 }
 .icon-action:hover {
-  border-color: var(--cardnet-teal);
+  border-color: var(--brand-teal);
   color: var(--sidebar-text);
 }
 .icon-action.primary {
-  background: var(--cardnet-teal);
-  border-color: var(--cardnet-teal);
+  background: var(--brand-teal);
+  border-color: var(--brand-teal);
   color: #fff;
 }
 .icon-action.danger:hover {
-  border-color: var(--cardnet-coral);
-  color: var(--cardnet-coral);
+  border-color: var(--brand-coral);
+  color: var(--brand-coral);
 }
 .view-switch {
   display: grid;
@@ -480,7 +480,7 @@ defineEmits(['open-file-form', 'toggle-theme']);
   color: var(--sidebar-text);
 }
 .view-link.router-link-exact-active {
-  background: var(--cardnet-teal);
+  background: var(--brand-teal);
   color: #fff;
 }
 .env-list,
@@ -517,17 +517,17 @@ defineEmits(['open-file-form', 'toggle-theme']);
   position: absolute;
   inset: 0 auto 0 0;
   width: 3px;
-  background: var(--cardnet-teal);
+  background: var(--brand-teal);
 }
 .env-card:hover,
 .file-item:hover {
-  border-color: var(--cardnet-teal);
+  border-color: var(--brand-teal);
   transform: translateY(-1px);
 }
 .env-card.active,
 .file-item.active {
   background: rgba(0, 182, 200, .14);
-  border-color: var(--cardnet-teal);
+  border-color: var(--brand-teal);
 }
 .env-icon,
 .file-icon {
@@ -536,7 +536,7 @@ defineEmits(['open-file-form', 'toggle-theme']);
   border-radius: 9px;
   display: grid;
   place-items: center;
-  background: var(--cardnet-navy);
+  background: var(--brand-navy);
   color: #fff;
   font-size: 11px;
   font-weight: 800;
@@ -546,7 +546,7 @@ defineEmits(['open-file-form', 'toggle-theme']);
 }
 .env-card.active .env-icon,
 .file-item.active .file-icon {
-  background: var(--cardnet-teal);
+  background: var(--brand-teal);
 }
 .env-copy,
 .file-info {
@@ -584,7 +584,7 @@ defineEmits(['open-file-form', 'toggle-theme']);
 .file-count {
   border: 1px solid rgba(0, 182, 200, .34);
   border-radius: 999px;
-  color: var(--cardnet-teal);
+  color: var(--brand-teal);
   flex-shrink: 0;
   font-size: 9px;
   font-weight: 900;
@@ -625,8 +625,8 @@ defineEmits(['open-file-form', 'toggle-theme']);
 }
 .env-card.active .env-state,
 .file-state {
-  border-color: var(--cardnet-teal);
-  color: var(--cardnet-teal);
+  border-color: var(--brand-teal);
+  color: var(--brand-teal);
 }
 .env-actions,
 .file-actions {
@@ -666,9 +666,9 @@ defineEmits(['open-file-form', 'toggle-theme']);
 .compact-delete:focus-visible,
 .file-delete-btn:hover,
 .file-delete-btn:focus-visible {
-  border-color: var(--cardnet-coral);
+  border-color: var(--brand-coral);
   background: rgba(240, 86, 116, .12);
-  color: var(--cardnet-coral);
+  color: var(--brand-coral);
   outline: none;
 }
 .file-delete-btn {
@@ -697,9 +697,9 @@ defineEmits(['open-file-form', 'toggle-theme']);
   font-size: 12px;
   outline: none;
 }
-.inline-form input:focus { border-color: var(--cardnet-teal); }
+.inline-form input:focus { border-color: var(--brand-teal); }
 .inline-form button {
-  background: var(--cardnet-teal);
+  background: var(--brand-teal);
   border: none;
   color: #fff;
   padding: 6px 12px;
@@ -728,7 +728,7 @@ defineEmits(['open-file-form', 'toggle-theme']);
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  background: var(--cardnet-teal);
+  background: var(--brand-teal);
   color: #fff;
   display: grid;
   place-items: center;
@@ -737,7 +737,7 @@ defineEmits(['open-file-form', 'toggle-theme']);
   flex-shrink: 0;
 }
 .role-badge {
-  color: var(--cardnet-teal);
+  color: var(--brand-teal);
   font-weight: 600;
   font-size: 11px;
 }

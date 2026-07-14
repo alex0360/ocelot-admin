@@ -53,13 +53,13 @@ body {
   font-size: 14px;
 }
 .app-shell {
-  --cardnet-teal: #00B6C8;
-  --cardnet-coral: #F05674;
-  --cardnet-yellow: #FFDF00;
-  --cardnet-warm: #E2E0DB;
-  --cardnet-purple: #8342D7;
-  --cardnet-navy: #2A285F;
-  --cardnet-teal-dark: #008B99;
+  --brand-teal: #00B6C8;
+  --brand-coral: #F05674;
+  --brand-yellow: #FFDF00;
+  --brand-warm: #E2E0DB;
+  --brand-purple: #8342D7;
+  --brand-navy: #2A285F;
+  --brand-teal-dark: #008B99;
   --danger: #F05674;
   --app-bg: #F4F7FA;
   --surface: #FFFFFF;

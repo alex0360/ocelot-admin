@@ -296,12 +296,12 @@ function isRollbackSnapshot(snapshot) {
   padding: 22px 28px;
   background:
     radial-gradient(circle at 92% 10%, rgba(0, 182, 200, .22), transparent 28%),
-    linear-gradient(135deg, var(--cardnet-navy), #211F4B);
+    linear-gradient(135deg, var(--brand-navy), #211F4B);
   color: #fff;
   border-bottom: 1px solid rgba(226, 224, 219, .18);
 }
 .eyebrow {
-  color: var(--cardnet-teal);
+  color: var(--brand-teal);
   font-size: 10px;
   font-weight: 900;
   letter-spacing: 1.2px;
@@ -335,8 +335,8 @@ function isRollbackSnapshot(snapshot) {
   color: #fff;
 }
 .primary-btn {
-  background: var(--cardnet-teal);
-  border: 1px solid var(--cardnet-teal);
+  background: var(--brand-teal);
+  border: 1px solid var(--brand-teal);
   color: #fff;
 }
 .secondary-btn {
@@ -400,7 +400,7 @@ function isRollbackSnapshot(snapshot) {
   display: grid;
   place-items: center;
   margin: 0 auto 16px;
-  background: linear-gradient(135deg, var(--cardnet-teal), var(--cardnet-purple));
+  background: linear-gradient(135deg, var(--brand-teal), var(--brand-purple));
   color: #fff;
   font-weight: 900;
 }
@@ -419,7 +419,7 @@ function isRollbackSnapshot(snapshot) {
 .error-message {
   border: 1px solid rgba(240, 86, 116, .38);
   background: rgba(240, 86, 116, .10);
-  color: var(--cardnet-coral);
+  color: var(--brand-coral);
 }
 .timeline {
   list-style: none;
@@ -450,11 +450,11 @@ function isRollbackSnapshot(snapshot) {
   position: relative;
 }
 .timeline-item.current {
-  --timeline-dot-bg: var(--cardnet-teal);
-  --timeline-dot-border: var(--cardnet-teal);
+  --timeline-dot-bg: var(--brand-teal);
+  --timeline-dot-border: var(--brand-teal);
   --timeline-dot-halo: rgba(0, 182, 200, .18);
-  --timeline-line: linear-gradient(180deg, var(--cardnet-teal), rgba(0, 182, 200, .62) 48%, rgba(131, 66, 215, .62));
-  --timeline-card-line: linear-gradient(180deg, var(--cardnet-teal), rgba(0, 182, 200, .64) 45%, var(--cardnet-purple));
+  --timeline-line: linear-gradient(180deg, var(--brand-teal), rgba(0, 182, 200, .62) 48%, rgba(131, 66, 215, .62));
+  --timeline-card-line: linear-gradient(180deg, var(--brand-teal), rgba(0, 182, 200, .64) 45%, var(--brand-purple));
 }
 .timeline-item.rollback {
   --timeline-dot-bg: rgba(131, 66, 215, .24);
@@ -463,11 +463,11 @@ function isRollbackSnapshot(snapshot) {
   --timeline-card-line: linear-gradient(180deg, rgba(131, 66, 215, .72), rgba(131, 66, 215, .46) 52%, rgba(226, 224, 219, .28));
 }
 .timeline-item.current.rollback {
-  --timeline-dot-bg: linear-gradient(135deg, var(--cardnet-teal), var(--cardnet-purple));
-  --timeline-dot-border: var(--cardnet-purple);
+  --timeline-dot-bg: linear-gradient(135deg, var(--brand-teal), var(--brand-purple));
+  --timeline-dot-border: var(--brand-purple);
   --timeline-dot-halo: rgba(131, 66, 215, .18);
-  --timeline-line: linear-gradient(180deg, var(--cardnet-teal), rgba(131, 66, 215, .74));
-  --timeline-card-line: linear-gradient(180deg, var(--cardnet-teal), var(--cardnet-purple));
+  --timeline-line: linear-gradient(180deg, var(--brand-teal), rgba(131, 66, 215, .74));
+  --timeline-card-line: linear-gradient(180deg, var(--brand-teal), var(--brand-purple));
 }
 .timeline-item::before {
   content: "";
@@ -527,7 +527,7 @@ function isRollbackSnapshot(snapshot) {
 .snapshot-size {
   align-self: flex-start;
   align-items: center;
-  background: var(--cardnet-navy);
+  background: var(--brand-navy);
   border: 1px solid rgba(0, 182, 200, .55);
   border-radius: 7px;
   box-shadow: 0 1px 0 rgba(255, 255, 255, .12) inset;
@@ -579,28 +579,28 @@ function isRollbackSnapshot(snapshot) {
   text-transform: uppercase;
 }
 .change-kind.add {
-  background: var(--cardnet-teal);
+  background: var(--brand-teal);
   border-color: rgba(0, 182, 200, .75);
   color: #051A2F;
 }
 .change-kind.mod {
-  background: var(--cardnet-yellow);
+  background: var(--brand-yellow);
   border-color: rgba(255, 223, 0, .78);
-  color: var(--cardnet-navy);
+  color: var(--brand-navy);
 }
 .change-kind.del {
-  background: var(--cardnet-coral);
+  background: var(--brand-coral);
   border-color: rgba(240, 86, 116, .78);
   color: #fff;
 }
 .change-kind.rollback {
-  background: var(--cardnet-purple);
+  background: var(--brand-purple);
   border-color: rgba(131, 66, 215, .78);
   color: #fff;
 }
 .backup-chip {
   align-items: center;
-  background: var(--cardnet-navy);
+  background: var(--brand-navy);
   border: 1px solid rgba(0, 182, 200, .55);
   border-radius: 7px;
   box-shadow: 0 1px 0 rgba(255, 255, 255, .12) inset;
@@ -638,7 +638,7 @@ function isRollbackSnapshot(snapshot) {
   appearance: none;
   border: 0;
   background: transparent;
-  color: var(--cardnet-teal);
+  color: var(--brand-teal);
   cursor: pointer;
   font: inherit;
   font-size: 12px;
@@ -669,7 +669,7 @@ function isRollbackSnapshot(snapshot) {
   align-items: flex-start;
   background:
     radial-gradient(circle at 85% 0%, rgba(0, 182, 200, .2), transparent 32%),
-    linear-gradient(135deg, var(--cardnet-navy), #211F4B);
+    linear-gradient(135deg, var(--brand-navy), #211F4B);
   color: #fff;
   display: flex;
   gap: 16px;
@@ -765,7 +765,7 @@ function isRollbackSnapshot(snapshot) {
   resize: vertical;
 }
 .field textarea:focus {
-  border-color: var(--cardnet-teal);
+  border-color: var(--brand-teal);
   box-shadow: 0 0 0 3px rgba(0, 182, 200, .16);
   outline: none;
 }

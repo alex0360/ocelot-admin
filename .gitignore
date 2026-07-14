@@ -82,5 +82,7 @@ _[Ss]cripts
 *.dot[Cc]over
 *cypress.env.json
 .env
+.env.local
+.env.*.local
 /coverage
 cypress/reports/
